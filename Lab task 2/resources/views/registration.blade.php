@@ -1,4 +1,5 @@
-
+@extends('layout')
+@section('content')
 <html>
 	<head></head>
 	<body>

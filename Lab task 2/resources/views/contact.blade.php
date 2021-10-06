@@ -1,4 +1,5 @@
-
+@extends('layout')
+@section('content')
 <html>
 	<head></head>
 	<body>
@@ -35,7 +36,7 @@ font-size:30px;}
 			<tr>
 			        <td><span>Name </span></td>
 						
-                    <td>:<input type="text" placeholder="First name" name= "name" value="{{old('name')}}" class="form-control">
+                    <td><input type="text"name= "name" value="{{old('name')}}" class="form-control">
                     @error('name')
                 <span class="text-danger">{{$message}}</span>
             @enderror</td>
@@ -44,7 +45,7 @@ font-size:30px;}
 				<tr>
 							<td><span>Email</span></td>
 
-					<td>:<input type="text" placeholder="Email" name="email"value="{{old('email')}}" class="form-control" >
+					<td><input type="text"  name="email"value="{{old('email')}}" class="form-control" >
 						@error('email')
                 <span class="text-danger">{{$message}}</span>
             @enderror</td>
@@ -52,7 +53,7 @@ font-size:30px;}
 				<tr>
 				<td><span>Phone number</span></td>
                     
-                    <td>:<input type="text" placeholder="Phone Number"name="pn" value="{{old('pn')}}" class="form-control"> 
+                    <td><input type="text" name="pn" value="{{old('pn')}}" class="form-control"> 
                     	@error('pn')
                 <span class="text-danger">{{$message}}</span>
             @enderror</td>

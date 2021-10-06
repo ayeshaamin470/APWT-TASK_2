@@ -1,3 +1,5 @@
+@extends('layout')
+@section('content')
 <html>
 	<head>
     <title>log in </title>
@@ -61,3 +63,4 @@ Log in to your Accout<br>
 
 	</body>
 </html>
+@stop
